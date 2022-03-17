@@ -10,7 +10,6 @@ export const ProductsPage = () => {
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products").then(({ data }) => {
       setProducts(data);   
-    //   console.log(data);
     });
   }, []);
 
